@@ -272,8 +272,8 @@ sub EFI_HII_PACKAGE_STRINGS {
 	
 		my @table = unpack('(H2)*',$table);
 		
-		# Так как начало слова содержит флаг типа строки
-		# и мы не можем сделать сплит всей строки, будем читать побайтно
+		# As beginning  of string contains type
+		# and we can't split whole string, let's read byte by byte
  
 		my @strings;
 		my $position=0;
